@@ -19,7 +19,12 @@
         <header>
             <img src="img/logo.png">
         </header>
-        <img class="feed-img" src="img/itens.png" alt="Feed">
+        <div id="chatbot" class="chat-content">
+        </div>
+        <form>
+            <input ng-model="question" />
+            <button ng-click="createChat()">Enviar</button>
+        </form>
         <nav>
             <button><a href="index.html"><img src="img/feed.png"></a></button>
             <button><a href="qrcode.html"><img src="img/qrcode.png"></a></button>
